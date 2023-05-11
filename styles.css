@@ -1,0 +1,526 @@
+/*********************************************************TAG SECTION******************************************************************/
+body
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none!important;
+    color: #fff!important;
+}
+/* The line of code: '.profile h3' says this: In the "profile" class there is another tag called "h3" */
+blockquote::before
+{
+    content: '\201C';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+blockquote::after
+{
+    content: '\201D';
+    font-size: 50px;
+    color: #007bff;
+    position: relative;
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+/* The line of code: 'ul li:last-child' says this: In the last "li" tag add no border*/
+ul li:last-child
+{
+    border: none;
+}
+/*********************************************************CLASS SECTION****************************************************************/
+/*----------Navigation-------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+/* The line of code: '.navbar-brand img' says this: In the "navbar-brand" class theres is another tag called "img" */
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 30px;
+}
+/* The line of code: '.navbar-nav li' says this: In the "navbar-brand" class theres is another tag called "li" */
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+/* The line of code: '.navbar-nav li a' says this: In the "navbar-brand" class theres is another tag called "li" and within that tag theere is another tag called "a" */
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+.navbar
+{
+    background: #fff;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*-------Slider------*/
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+/* The line of code: '.carousel-caption h5' says this: In the "carousel-caption" class theres is another tag called "h5" */
+.carousel-caption h5
+{
+    color: #fff;
+    font-size: 42px;
+}
+/*---------------About--------*/
+.about-content
+{
+    padding-top: 20px;
+}
+/* The line of code: '.skills-bar p' says this: In the "skills-bar" class theres is another tag called "p" */
+.skills-bar p
+{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar
+{
+    border-radius: 16px;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+/*------------------Services------------*/
+.services
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+/* The line of code: '.skills-bar p' says this: In the "skills-bar" class theres is another class called "col-md-3" of which a hover state has been set for it. */
+.services .col-md-3:hover
+{
+    background: #007bff;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*___________Team Members-----------*/
+h1
+{
+    text-align: center;
+    color: #555 !important;
+    padding-bottom: 10px;
+}
+/* The line of code: '.h1::after' says this: In the "h1" class theres is a hover state that has been set for it. */
+h1::after
+{
+    content: '';
+    background: #007bff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.profile-pic
+{
+    margin-top: 25px;
+}
+/* The line of code: '.profile-pic .img-box' says this: In the "profile-pic" class theres is another class called "img-box" */
+.profile-pic .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+/* The line of code: '.profile-pic .img-box' says this: In the "profile-pic" class theres is another class called "img-box" and within that class there is another class called "img" */
+.profile-pic .img-box img
+{
+    filter: grayscale(1);
+}
+/* The line of code: '.profile-pic .img-box img:hover' says this: In the "profile-pic" class theres is another class called "img-box" of which a hover state has been set for it */
+.profile-pic .img-box img:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+/* The line of code: '.profile-pic h2' says this: In the "profile-pic" class theres is another class called "h2" */
+.profile-pic h2
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #007bff !important;
+}
+/* The line of code: '.profile-pic h3' says this: In the "profile-pic" class theres is another class called "h3" */
+.profile-pic h3
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+/* The line of code: '.img-box ul' says this: In the "img-box" class theres is another class called "ul" */
+.img-box ul
+{
+    padding: 15px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+/* The line of code: '.img-box ul li' says this: In the "img-box" class theres is another tag called "ul" and within that tag there is another tag called "li"*/
+.img-box ul li
+{
+    padding: 5px;
+    display: inline-block;
+}
+/* The line of code: '.img-box:hover ul' says this: In the "img-box" class a hover state has been set for it that will only affect the unordered lists */
+.img-box:hover ul
+{
+    opacity: 1;
+}
+/* The line of code: '.img-box ul' says this: In the "img-box" class there is another tag called "ul" */
+.img-box ul
+{
+    transition: 0.5s;
+}
+/* The line of code: '.img-box ul li' says this: In the "img-box" class there is another tag called "ul" and within that tag there is another tag called "li" */
+.img-box ul li
+{
+    transition: 0.5s;
+}
+/*------------Promo--------*/
+/* IN THE ID SECTION */
+/*---------Price Plans------*/
+.single-price
+{
+    margin: 10px auto;
+    display: inline;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.single-price:hover
+{
+    box-shadow: 0 2px 20px #333;
+}
+.price-head
+{
+    background-color: #2196f3;
+    display: inline;
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+    width: 100%;
+}
+/* The line of code: '.price-head h2' says this: In the "price-head" class there is another tag called "h2" */
+.price-head h2
+{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+/* The line of code: '.price-head p' says this: In the "price-head" class there is another tag called "p" */
+.price-head p
+{
+    font-size: 25px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 30px;
+}
+.price-content
+{
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+/* The line of code: '.price-content ul li' says this: In the "price-content" class there is another tag called "ul" and within that tag there is another tag called "li" */
+.price-content ul li
+{
+ border-bottom: 1px solid #efefef;
+    padding: 15px 10px;
+    list-style: none;
+}
+.fa-check-circle
+{
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.fa-times-circle
+{
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.price-button
+{
+    display: inline;
+    float: left;
+    padding: 15px 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+.buy-btn
+{
+    background-color: #2196f3;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 15px 50px;
+    transition: 0.5s;
+}
+.buy-btn:hover
+{
+    border-color: 1px solid #fff;
+    background-color: #3f51b5;
+}
+/*----------Testimonials---------*/
+.col-md-4
+{
+    margin: 40px auto;
+}
+.profile
+{
+    padding: 30px 10px 10px;
+    background-color: #efefef;
+}
+.user
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+/* The line of code: '.profile img' says this: In the "profile" class there is another tag called "img" */
+.profile img
+{
+    top: -60px;
+    position:absolute;
+    left: calc(50% - 60px);
+    border: 10px solid #fff;
+}
+/* The line of code: '.profile h3' says this: In the "profile" class there is another tag called "h3" */
+.profile h3
+{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+}
+blockquote
+{
+    font-size: 16px;
+    line-height: 30px;
+}
+.profile:hover
+{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*------------Get in Touch--------*/
+.contact-form
+{
+    padding-top: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    max-width: 600px;
+}
+.form-control
+{
+    border-radius: 0 !important;
+    border: none !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+::placeholder
+{
+    color: #999 !important;
+}
+.follow
+{
+    background: #fff;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* The line of code: '.contact-info .fa' says this: In the "contact-info" class there is another tag called "fa" */
+.contact-info .fa
+{
+    margin: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+/*--------Footer-------*/
+.fa-heart-o
+{
+    margin: 3px;
+    color: red;
+}
+/*********************************************************ID SECTION*******************************************************************/
+/* The line of code: '.navbar-nav li a' says this: In the "navbar-brand" id theres is another tag called "li" and within that tag theere is another tag called "a" of which a hover state has benen set for it.*/
+#nav-bar ul li a:hover
+{
+    color: #007bff!important;
+}
+#slider
+{
+    width: 100%;
+}
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+/* The line of code: '#about .btn' says this: In the "about" id theres is another class called "btn" */
+#about .btn
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/services.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* The line of code: '#services h1' says this: In the "services" id theres is another tag called "h1" */
+#services h1
+{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+/* The line of code: '#services h1' says this: In the "services" id theres is another tag called "h1" of which a an after state has been set for it*/
+#services h1::after
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+/* The line of code: '#services p' says this: In the "services" id theres is another tag called "p" */
+#services p
+{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+#team
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+/* The line of code: '#team .fa' says this: In the "team" id theres is another class called "fa" */
+#team .fa
+{
+    height: 25px;
+    width: 25px;
+    color: #007bff !important;
+    background: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+/* PROMO SECTION */
+#promo
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/promo.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+#price
+{
+    padding: 40px 0;
+    background: #efefef;
+}
+#price span
+{
+    font-size: 15px;
+}
+#testimonials
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* The line of code: '#testimonials .row' says this: In the "testimonials" id theres is another class called "row" */
+#testimonials .row
+{
+    margin-top: 30px;
+}
+/* The line of code: '#testimonials span' says this: In the "testimonials" id theres is another tag called "span" */
+#testimonials span
+{
+    font-size: 12px;
+    color: #333;
+}
+#contact
+{
+    background: #efefef;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #777;
+}
+#footer
+{
+   background: #333;
+    color: #fff;
+    padding: 12px;
+}
+
+@media only screen and (max-width: 800px)
+{
+    body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .carousel-caption h5
+    {
+        font-size: small;
+    }
+}
